@@ -3,15 +3,20 @@
   "version": "2.0.0",
   "name": "Real-time Labeling Quality Check",
   "description": "Automated real-time annotation tests.",
-  "docker_image": "supervisely/base-py-sdk:6.73.374",
-  "instance_version": "6.12.44",
-  "categories": ["images", "labeling"],
+  "docker_image": "supervisely/base-py-sdk-hardened:6.73.564",
+  "instance_version": "6.15.60",
+  "categories": [
+    "images",
+    "labeling"
+  ],
   "task_location": "application_sessions",
   "icon": "https://github.com/user-attachments/assets/ed21892e-4308-4085-b1d7-ef6253134a94",
   "icon_cover": true,
   "headless": false,
   "poster": "https://github.com/user-attachments/assets/1f2782b2-7eda-43fa-8368-af794f0782ee",
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
-  "integrated_into": ["image_annotation_tool"],
+  "integrated_into": [
+    "image_annotation_tool"
+  ],
   "port": 8000
 }
